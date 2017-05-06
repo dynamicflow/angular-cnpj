@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="../../bower_components/angular-messages/angular-messages.js"></script>
+    <script src="../../cnpj-validate.directive.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css" />
+</head>
+<body ng-app="sample01">
+
+    <h1>Using ng-message</h1>
+    <form name="sample01Form">
+        <input type="text" name="cnpj" ng-model="cnpj" cnpj required>
+        <div ng-messages="sample01Form.cnpj.$error" role="alert">
+            <div ng-message="cnpj" class="error">CNPJ Invalid</div>
+            <div ng-message="required" class="error">CNPJ Required</div>
+        </div>
+
+        <hr>
+        <input type="submit" value="submit"></input>
+    </form>
+
+</body>
+</html>
