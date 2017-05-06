@@ -41,5 +41,18 @@ The CNPJ fields can also be validated along with other angular directives such a
 ```html
 <script src="/bower_components/angular-cnpj/cnpj-validate.directive.js"></script>
 ... 
-<input type="text" name="cnpj" ng-model="cnpj" cnpj required>
+<input type="text" name="cnpj" ng-model="cnpj" required cnpj>
 ```
+
+[Check Sample01](https://rawgit.com/dynamicflow/angular-cnpj/master/examples/sample01/index.html)
+
+### CNPJ Validation + Required + UI.Mask
+
+The CNPJ fields can also be formatted using regular ui.mask templates such as:
+ 
+```html
+<input type="text" name="cnpj" ng-model="cnpj" cnpj required
+    ui-mask="99.999.999/9999-99" ui-mask-placeholder ui-mask-placeholder-char="_" >
+```
+
+[Check Sample02](https://rawgit.com/dynamicflow/angular-cnpj/master/examples/sample02/index.html)
