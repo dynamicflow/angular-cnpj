@@ -1,0 +1,28 @@
+{
+  "name": "angular-cnpj",
+  "version": "0.0.1",
+  "authors": [
+    "Alessandro Oliveira <alessandro@dynamicflow.com.br>"
+  ],
+  "description": "Brazilian CNPJ validation",
+  "main": "cnpj-validate.directive.js",
+  "keywords": [
+    "cnpj",
+    "angular",
+    "validação",
+    "validator"
+  ],
+  "license": "BSD-3-Clause",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-messages": "^1.6.4",
+    "angular-ui-mask": "^1.8.7"
+  }
+}
